@@ -33,6 +33,7 @@ body {
 
 .header {
     display: flex;
+    position: fixed;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +41,6 @@ body {
     height: 64px;
     width: 100%;
     padding: 0 51px;
-
 }
 
 .logo {
@@ -81,6 +81,8 @@ body {
     width: 100%;
     justify-content: center;
     padding: 21px 51px;
+    margin-top: 58px;
+
 }
 
 .left-sidebar {
@@ -111,6 +113,8 @@ body {
 .liens {
     display: flex;
     align-items: center;
+    width: 180px;
+    height: 26px;
 }
 
 
@@ -131,8 +135,8 @@ body {
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
     border-radius: 5px;
-    width: 180px;
-    height: 26px;
+    /* width: 180px;
+    height: 26px; */
 }
 
 .liens a:hover{
@@ -334,10 +338,10 @@ body {
 @media only screen and (max-width:1084px){
 
     .container {
-        /* flex-direction: column; */
         align-items: center;
         flex-wrap: wrap;
         padding: 12px 18px 25px 18px;
+        margin-top: 65px;
     }
 
     .right-sidebar {
@@ -354,6 +358,10 @@ body {
         justify-content: space-evenly;
     }
 
+    .container {
+        margin-top: 90px;
+    }
+
 
     .nav-bar {
         justify-content: space-evenly;
@@ -362,7 +370,7 @@ body {
     .left-sidebar {
         height: 85px;
         flex-wrap: wrap;
-        align-content: end;
+        align-content: space-around;
     }
 
 }
